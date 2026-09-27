@@ -1,0 +1,8 @@
+{
+  "name": "Remix METRISENSE - Precision Evaluation Platform",
+  "description": "OIML R 76 Type Evaluation Platform for Non-Automatic Weighing Instruments (NAWI) in laboratory metrology workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

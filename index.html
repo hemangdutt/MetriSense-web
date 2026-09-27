@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>METRISENSE — OIML R 76-1 NAWI Metrology Evaluation System</title>
+    <meta name="description" content="Government of India Department of Consumer Affairs — Legal Metrology Division OIML R 76-1 Type Evaluation Platform for Non-Automatic Weighing Instruments (NAWI)." />
+    <meta property="og:title" content="METRISENSE — OIML R 76-1 NAWI Metrology Evaluation System" />
+    <meta property="og:description" content="Government of India Department of Consumer Affairs — Legal Metrology Division OIML R 76-1 Type Evaluation Platform for Non-Automatic Weighing Instruments (NAWI)." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        function isBrowserLockerError(err) {
+          var msg = (err && (err.message || err.reason || err)) || '';
+          if (typeof msg !== 'string' && err && err.error && err.error.message) {
+            msg = err.error.message;
+          }
+          return typeof msg === 'string' && msg.indexOf('Breaking Browser Locker Behavior') !== -1;
+        }
+        window.addEventListener('error', function(e) {
+          if (isBrowserLockerError(e)) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+        window.addEventListener('unhandledrejection', function(e) {
+          if (isBrowserLockerError(e && e.reason)) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+        var prevOnError = window.onerror;
+        window.onerror = function(msg, source, lineno, colno, error) {
+          if (typeof msg === 'string' && msg.indexOf('Breaking Browser Locker Behavior') !== -1) {
+            return true;
+          }
+          if (prevOnError) {
+            return prevOnError.apply(this, arguments);
+          }
+        };
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
